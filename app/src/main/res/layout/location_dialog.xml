@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="320dp"
+    android:layout_height="300dp">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_email"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/scdream5"
+        android:text="Place Type"
+        android:textColor="#585858"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/scdream5"
+        android:text="Place Address"
+        android:textColor="#585858"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/scdream5"
+        android:text="Place Setting"
+        android:textColor="#222222"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_alignStart="@id/textView4"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_alignStart="@id/textView5"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/btn_guard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/btn_travel"
+            android:background="@drawable/stroke_login"
+            android:clickable="true"
+            android:fontFamily="@font/scdream5"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:text="Check Point"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_arr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/btn_guard"
+            android:background="@drawable/stroke_login"
+            android:clickable="true"
+            android:fontFamily="@font/scdream5"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:text="Destination"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/btn_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:background="@drawable/stroke_login"
+            android:clickable="true"
+            android:fontFamily="@font/scdream5"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:text="Origin"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
